@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Statistics</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Task Statistics</h1>
+
+<div class="task-card">
+
+<h2>Total Tasks: {{ total }}</h2>
+
+<h2>Completed: {{ completed }}</h2>
+
+<h2>Pending: {{ pending }}</h2>
+
+</div>
+
+<a href="/" class="btn">
+Back Home
+</a>
+
+</div>
+
+</body>
+</html>

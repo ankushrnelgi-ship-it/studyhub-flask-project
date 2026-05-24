@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>StudyHub</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 StudyHub</h1>
+<p class="subtitle">
+Developed by AnkushNelgi & team • Sapthagiri NPS University
+</p>
+
+<p class="subtitle">
+Student Productivity Management System
+</p>
+
+<a href="/add" class="btn">
+Add Task
+</a>
+
+<a href="/stats" class="btn">
+View Stats
+</a>
+
+{% for task in tasks %}
+
+<div class="task-card">
+
+<h2>{{ task[1] }}</h2>
+
+<p>Status: {{ task[2] }}</p>
+
+{% if task[2] == 'Pending' %}
+
+<a href="/complete/{{ task[0] }}"
+class="complete-btn">
+Complete
+</a>
+
+{% endif %}
+
+<a href="/delete/{{ task[0] }}"
+class="delete-btn">
+Delete
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>

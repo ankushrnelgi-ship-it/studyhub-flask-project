@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:40px;
+}
+
+h1{
+    font-size:50px;
+}
+
+.subtitle{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:#243b55;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+    display:inline-block;
+}
+
+.task-card{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    margin:20px auto;
+    width:60%;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.complete-btn{
+    background:limegreen;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.delete-btn{
+    background:crimson;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-left:10px;
+}
+
+input{
+    width:60%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
